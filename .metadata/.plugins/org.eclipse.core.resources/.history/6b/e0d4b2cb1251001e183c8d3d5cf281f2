@@ -1,0 +1,23 @@
+package contaBancoPoo;
+
+public class Referenciando {
+
+	public static void main(String[] args) {
+		
+		Cliente benjamin = new Cliente();
+		benjamin.nome ="Benjamin Leal";
+		benjamin.cpf ="444.444.444-44";
+		benjamin.profissao = "Programador";
+
+	Conta contaDoBenjamin = new Conta();
+	contaDoBenjamin.deposita(100);
+
+	contaDoBenjamin.titular = benjamin;
+	System.out.println(contaDoBenjamin.titular.nome);
+
+		
+		
+
+	}
+
+}
